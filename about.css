@@ -1,0 +1,135 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+padding: 40px 0;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+
+nav ul li a {
+  text-decoration: none;
+ color:  #1c4979;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+nav ul li a:hover {
+  color: #6accf3;
+  border-bottom: 2px solid #90c0f3;
+}
+
+.container {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.content {
+  display: flex;
+  gap: 20px;
+}
+
+.profile-photo img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.info {
+  flex-grow: 1;
+  margin-left: 40px;
+}
+
+.skills {
+  margin-top: 30px;
+}
+
+.skills h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.skills ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skills ul li {
+  font-size: 1.2rem;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 5px;
+  background-color: #007bff;
+  transition: background-color 0.3s ease;
+}
+
+.skills ul li:hover {
+  background-color: #0056b3;
+}
+
+.github-link{
+  display: flex;
+  margin-top: 20px;
+  justify-content: center;
+  text-align: center;
+}
+
+.github-link a {
+
+  padding: 12px 24px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 30px;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease;
+}
+
+.github-link a:hover {
+  background-color: #7eb8f7;
+}
+
+
+@media screen and (max-width: 768px) {
+  .content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .profile-photo img {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 20px;
+  }
+  .info {
+    margin-left: 0;
+    text-align: center;
+    order: -1;
+  }
+}
+
+ 
